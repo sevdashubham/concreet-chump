@@ -1,3 +1,7 @@
+<p align="center">
+<img src="https://rlv.zcache.com/anti_donald_trump_campaign_chump_2016_postcard-r3698849a975b4e26a195a1a3a8acbaf4_vgbaq_8byvr_324.jpg">
+</p>
+
 # ConcreetClient
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.3.
