@@ -1,0 +1,114 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+
+$mat-concreet-blue: (
+  50: #e0e5eb,
+  100: #b3bdce,
+  200: #8092ad,
+  300: #4d668c,
+  400: #264573,
+  500: #00245a,
+  600: #002052,
+  700: #001b48,
+  800: #00163f,
+  900: #000d2e,
+  A100: #677fff,
+  A200: #3455ff,
+  A400: #012aff,
+  A700: #0025e6,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: $white-87-opacity,
+    900: $white-87-opacity,
+    A100: $black-87-opacity,
+    A200: $black-87-opacity,
+    A400: $black-87-opacity,
+    A700: $black-87-opacity,
+  )
+);
+
+
+$mat-concreet-pink: (
+  50 : #fffbf7,
+  100: #fff5eb,
+  200: #ffefdd,
+  300: #fee9cf,
+  400: #fee4c5,
+  500: #fedfbb,
+  600: #fedbb5,
+  700: #fed7ac,
+  800: #fed2a4,
+  900: #fdca96,
+  A100: #fdca96,
+  A200: #fdca96,
+  A400: #fdca96,
+  A700: #fdca96,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: $white-87-opacity,
+    900: $white-87-opacity,
+    A100: $black-87-opacity,
+    A200: $black-87-opacity,
+    A400: $black-87-opacity,
+    A700: $black-87-opacity,
+  )
+);
+
+$mat-concreet-warn: (
+  50: #fce4f0,
+  100: #f9bbda,
+  200: #f58ec2,
+  300: #f061a9,
+  400: #ed3f96,
+  500: #ea1d84,
+  600: #e71a7c,
+  700: #e41571,
+  800: #e11167,
+  900: #db0a54,
+  A100: #ffffff,
+  A200: #ffd2e0,
+  A400: #ff9fbd,
+  A700: #ff85ab,
+
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: $white-87-opacity,
+    900: $white-87-opacity,
+    A100: $black-87-opacity,
+    A200: $black-87-opacity,
+    A400: $black-87-opacity,
+    A700: $black-87-opacity,
+  )
+);
+
+
+$concreet-app-primary: mat-palette($mat-concreet-blue);
+$concreet-app-accent:  mat-palette($mat-concreet-pink, A200, A100, A400);
+$concreet-app-warn:    mat-palette($mat-concreet-warn);
+
+$concreet-app-theme: mat-light-theme($concreet-app-primary, $concreet-app-accent, $concreet-app-warn);
+
+@include angular-material-theme($concreet-app-theme);

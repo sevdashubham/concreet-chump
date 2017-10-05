@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url(http://www.google.com/fonts#UsePace:use/Collection:Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Source%20Sans%20Pro:300,400,500,600,700);
+
+body{
+  margin: 0;
+  padding: 0;
+}
+.no-padding {
+  padding: 0 !important;
+}
